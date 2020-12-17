@@ -1,0 +1,9 @@
+{
+  "extends": "@valtech-ch/eslint-config-base/tsconfig",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "allowJs": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
+}
