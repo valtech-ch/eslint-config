@@ -1,7 +1,7 @@
 {
   "name": "@valtech-ch/eslint-config-react",
   "description": "ESLint configuration file containing rules for React projects using TypeScript",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "license": "MIT",
   "keywords": [
     "TypeScript",
