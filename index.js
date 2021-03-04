@@ -70,8 +70,6 @@ module.exports = {
      * @see https://github.com/prettier/eslint-config-prettier
      */
     'prettier',
-    'prettier/@typescript-eslint',
-    'prettier/react',
   ],
   rules: {
     // https://www.npmjs.com/package/eslint-plugin-react
