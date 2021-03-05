@@ -264,11 +264,6 @@
     "@typescript-eslint/types" "4.16.1"
     eslint-visitor-keys "^2.0.0"
 
-"@valtech-ch/eslint-config-base@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@valtech-ch/eslint-config-base/-/eslint-config-base-1.1.0.tgz#854f4e492bf9d3bedf00f63455dd4e7c9dfba64c"
-  integrity sha512-oxT2iXyFBdnZkMNADhk7l9samUSa998q/o5jnCtuFAuO0A9nxY91DPbpDZUHjWZ/cmkmH24lCEYvX8/7RXuT4Q==
-
 acorn-jsx@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.1.tgz#fc8661e11b7ac1539c47dbfea2e72b3af34d267b"
