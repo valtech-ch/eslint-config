@@ -1,3 +1,11 @@
 module.exports = {
-  ...require('@valtech-ch/eslint-config-base/prettier.config'),
+  arrowParens: 'always',
+  bracketSpacing: true,
+  endOfLine: 'lf',
+  printWidth: 80,
+  semi: false,
+  singleQuote: true,
+  trailingComma: 'all',
+  tabWidth: 2,
+  useTabs: false,
 }
