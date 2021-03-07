@@ -1,8 +1,23 @@
 {
-  "extends": "@valtech-ch/eslint-config-base/tsconfig",
   "compilerOptions": {
-    "jsx": "preserve",
-    "allowJs": true
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true
   },
   "exclude": ["node_modules"],
   "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
