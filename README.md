@@ -12,6 +12,10 @@ Add peer dependencies (for existing projects maybe you prefer to add them manual
 
     npx install-peerdeps -D @valtech-ch/eslint-config
 
+Initialize TypeScript if you did not so far
+
+    tsc --init
+
 ## Content
 
 This package contain configurations and rules:
