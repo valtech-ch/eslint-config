@@ -12,10 +12,6 @@ Add peer dependencies (for existing projects maybe you prefer to add them manual
 
     npx install-peerdeps -D @valtech-ch/eslint-config
 
-Initialize TypeScript if you did not so far
-
-    tsc --init
-
 ## Content
 
 This package contain configurations and rules:
@@ -38,7 +34,7 @@ This package contain configurations and rules:
 
 ## Usage
 
-Setup ESLint configuration and rules in `.eslintrc.js`:
+1. Setup ESLint configuration and rules in `.eslintrc.js`:
 
     module.exports = {
         extends: [
@@ -56,10 +52,11 @@ That's all, you don't need anything else in this file. You can use your custom c
         ]
     }
 
-Setup prettier in `prettier.config.js`:
+2. Setup prettier in `prettier.config.js`:
 
     module.exports = require("@valtech-ch/eslint-config/prettier.config")
 
-Setup Typescript in `tsconfig.json`
+3. Setup Typescript in `tsconfig.json`
 
     { "extends": "@valtech-ch/eslint-config/tsconfig" }
+
