@@ -52,11 +52,11 @@ That's all, you don't need anything else in this file. You can use your custom c
         ]
     }
 
-2. Setup prettier in `prettier.config.js`:
+1. Setup prettier in `prettier.config.js`:
 
     module.exports = require("@valtech-ch/eslint-config/prettier.config")
 
-3. Setup Typescript in `tsconfig.json`
+1. Setup Typescript in `tsconfig.json`
 
     { "extends": "@valtech-ch/eslint-config/tsconfig" }
 
