@@ -1,6 +1,6 @@
 # eslint-config
 
-Configuration and rules for ESLint, Prettier and Typescript.
+Configuration and rules for ESLint, Prettier and TypeScript.
 
 ## Install
 
@@ -14,19 +14,19 @@ Add peer dependencies (for existing projects maybe you prefer to add them manual
 
 ## Content
 
-This package contain configurations and rules:
+This package contains configurations and rules:
 
-### JavaScript
+### For JavaScript
 
     @valtech-ch/eslint-config/config
     @valtech-ch/eslint-config/rules
 
-### React
+### For React
 
     @valtech-ch/eslint-config/config/react
     @valtech-ch/eslint-config/rules/react
 
-### Next.js
+### For Next.js
 
     @valtech-ch/eslint-config/config/react
     @valtech-ch/eslint-config/rules/react
