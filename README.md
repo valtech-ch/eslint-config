@@ -34,7 +34,7 @@ This package contain configurations and rules:
 
 ## Usage
 
-1. Setup ESLint configuration and rules in `.eslintrc.js`:
+1. To setup ESLint, create a `.eslintrc.js` file with this content:
 
     module.exports = {
         extends: [
@@ -43,7 +43,7 @@ This package contain configurations and rules:
         ]
     }
 
-That's all, you don't need anything else in this file. You can use your custom configuration extending just the rules:
+If instead of the given config you want a custom one, you can do it by having this `.eslintrc.json` file content instead:
 
     module.exports = {
         // your custom config
@@ -52,11 +52,11 @@ That's all, you don't need anything else in this file. You can use your custom c
         ]
     }
 
-1. Setup prettier in `prettier.config.js`:
+1. To setup prettier, create a `prettier.config.js` file with this content:
 
     module.exports = require("@valtech-ch/eslint-config/prettier.config")
 
-1. Setup Typescript in `tsconfig.json`
+1. To setup TypeScript, create a `tsconfig.json` file with this content:
 
     { "extends": "@valtech-ch/eslint-config/tsconfig" }
 
