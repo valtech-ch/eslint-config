@@ -34,29 +34,41 @@ This package contain configurations and rules:
 
 ## Usage
 
-1. To setup ESLint, create a `.eslintrc.js` file with this content:
+1. To setup ESLint, create a `.eslintrc.js` file with
 
+    * this content if you want our given config:
+
+    ```js
     module.exports = {
         extends: [
             "@valtech-ch/eslint-config/config",
             "@valtech-ch/eslint-config/rules"
         ]
     }
+    ```
 
-If instead of the given config you want a custom one, you can do it by having this `.eslintrc.json` file content instead:
+    * or this content if you want your own config instead:
 
+    ```js
     module.exports = {
         // your custom config
         extends: [
             "@valtech-ch/eslint-config/rules"
         ]
     }
+    ```
 
-1. To setup prettier, create a `prettier.config.js` file with this content:
+2. To setup Prettier, create a `prettier.config.js` file with this content:
 
-    module.exports = require("@valtech-ch/eslint-config/prettier.config")
+    `module.exports = require("@valtech-ch/eslint-config/prettier.config")`
 
-1. To setup TypeScript, create a `tsconfig.json` file with this content:
+3. To setup TypeScript, create a `tsconfig.json` file with
 
-    { "extends": "@valtech-ch/eslint-config/tsconfig" }
+    * this content for non-React projects:
+
+    `{ "extends": "@valtech-ch/eslint-config/tsconfig" }`
+
+    * this content for React projects:
+-
+    `{ "extends": "@valtech-ch/eslint-config/tsconfig.react" }`
 
