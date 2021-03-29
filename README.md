@@ -4,8 +4,6 @@ Configuration and rules for ESLint, Prettier and TypeScript.
 
 We recommend and assume your project to have TypeScript.
 
-For React applications, the corresponding documentation is at [Creating a TypeScript App](https://create-react-app.dev/docs/getting-started#creating-a-typescript-app).
-
 ## Install
 
 Add this package
