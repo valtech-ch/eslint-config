@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: ['@typescript-eslint', 'import', 'simple-import-sort'],
   extends: [
     // https://www.npmjs.com/package/eslint-config-airbnb-typescript
     'airbnb-typescript/base',
@@ -48,6 +48,25 @@ module.exports = {
           'parent',
           'sibling',
           'index',
+        ],
+      },
+    ],
+
+    // https://www.npmjs.com/package/eslint-plugin-simple-import-sort
+    'simple-import-sort/imports': [
+      'error',
+      {
+        groups: [
+          // Internal packages.
+          ['^(@|@company|@ui|components|utils|config|vendored-lib)(/.*|$)'],
+          // Side effect imports.
+          ['^\\u0000'],
+          // Parent imports. Put `..` last.
+          ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
+          // Other relative imports. Put same-folder imports and `.` last.
+          ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+          // Style imports.
+          ['^.+\\.s?css$'],
         ],
       },
     ],
