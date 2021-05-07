@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: ['@typescript-eslint', 'import', 'unused-imports'],
   extends: [
     // https://www.npmjs.com/package/eslint-config-airbnb-typescript
     'airbnb-typescript/base',
@@ -51,5 +51,8 @@ module.exports = {
         ],
       },
     ],
+
+    // https://www.npmjs.com/package/eslint-plugin-unused-imports
+    'unused-imports/no-unused-imports': 'error',
   },
 }
