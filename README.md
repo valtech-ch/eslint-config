@@ -21,56 +21,59 @@ This package contains configurations and rules:
 ### For JavaScript
 
     @valtech-ch/eslint-config/config
+    @valtech-ch/eslint-config/plugins
     @valtech-ch/eslint-config/rules
 
 ### For React
 
     @valtech-ch/eslint-config/config/react
+    @valtech-ch/eslint-config/plugins/react
     @valtech-ch/eslint-config/rules/react
 
 ### For Next.js
 
     @valtech-ch/eslint-config/config/react
-    @valtech-ch/eslint-config/rules/react
+    @valtech-ch/eslint-config/plugins/react
     @valtech-ch/eslint-config/rules/nextjs
 
 ## Usage
 
 1. To setup ESLint, create a `.eslintrc.js` file with
 
-    * this content if you want our given config:
+   - this content if you want our given config:
 
-    ```js
-    module.exports = {
-        extends: [
-            "@valtech-ch/eslint-config/config",
-            "@valtech-ch/eslint-config/rules"
-        ]
-    }
-    ```
+```js
+module.exports = {
+  extends: [
+    '@valtech-ch/eslint-config/config',
+    '@valtech-ch/eslint-config/plugins',
+    '@valtech-ch/eslint-config/rules',
+  ],
+}
+```
 
-    * or this content if you want your own config instead:
+- or this content if you want your own config instead:
 
-    ```js
-    module.exports = {
-        // your custom config
-        extends: [
-            "@valtech-ch/eslint-config/rules"
-        ]
-    }
-    ```
+```js
+module.exports = {
+  // your custom config
+  extends: [
+    '@valtech-ch/eslint-config/plugins',
+    '@valtech-ch/eslint-config/rules',
+  ],
+}
+```
 
 2. To setup Prettier, create a `prettier.config.js` file with this content:
 
-    `module.exports = require("@valtech-ch/eslint-config/prettier.config")`
+   `module.exports = require("@valtech-ch/eslint-config/prettier.config")`
 
 3. To setup TypeScript, create a `tsconfig.json` file with
 
-    * this content for non-React projects:
+   - this content for non-React projects:
 
-    `{ "extends": "@valtech-ch/eslint-config/tsconfig" }`
+   `{ "extends": "@valtech-ch/eslint-config/tsconfig" }`
 
-    * this content for React projects:
--
-    `{ "extends": "@valtech-ch/eslint-config/tsconfig.react" }`
+   - this content for React projects:
 
+   `{ "extends": "@valtech-ch/eslint-config/tsconfig.react" }`
