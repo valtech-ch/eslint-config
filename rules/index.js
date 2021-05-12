@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: ['@typescript-eslint', 'import', 'simple-import-sort'],
   extends: [
     // https://www.npmjs.com/package/eslint-config-airbnb-typescript
     'airbnb-typescript/base',
@@ -38,18 +38,9 @@ module.exports = {
     // https://www.npmjs.com/package/eslint-plugin-import
     'import/extensions': ['error', 'never'],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    'import/order': [
-      'error',
-      {
-        groups: [
-          'builtin',
-          'external',
-          'internal',
-          'parent',
-          'sibling',
-          'index',
-        ],
-      },
-    ],
+
+    // https://www.npmjs.com/package/eslint-plugin-simple-import-sort
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
 }
