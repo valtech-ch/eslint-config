@@ -38,37 +38,9 @@ module.exports = {
     // https://www.npmjs.com/package/eslint-plugin-import
     'import/extensions': ['error', 'never'],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    'import/order': [
-      'error',
-      {
-        groups: [
-          'builtin',
-          'external',
-          'internal',
-          'parent',
-          'sibling',
-          'index',
-        ],
-      },
-    ],
 
     // https://www.npmjs.com/package/eslint-plugin-simple-import-sort
-    'simple-import-sort/imports': [
-      'error',
-      {
-        groups: [
-          // Internal packages.
-          ['^(@|@company|@ui|components|utils|config|vendored-lib)(/.*|$)'],
-          // Side effect imports.
-          ['^\\u0000'],
-          // Parent imports. Put `..` last.
-          ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
-          // Other relative imports. Put same-folder imports and `.` last.
-          ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
-          // Style imports.
-          ['^.+\\.s?css$'],
-        ],
-      },
-    ],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
 }
