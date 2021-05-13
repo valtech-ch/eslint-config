@@ -1,5 +1,10 @@
 module.exports = {
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: [
+    '@typescript-eslint',
+    'import',
+    'simple-import-sort',
+    'unused-imports',
+  ],
   extends: [
     // https://www.npmjs.com/package/eslint-config-airbnb-typescript
     'airbnb-typescript/base',

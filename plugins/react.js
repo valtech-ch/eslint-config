@@ -6,11 +6,10 @@ module.exports = {
     'jsx-a11y',
     'react',
     'react-hooks',
-    'simple-import-sort',
     'testing-library',
   ],
   extends: [
-    "./index.js",
+    './index.js',
     // https://www.npmjs.com/package/eslint-config-airbnb-typescript
     'airbnb-typescript',
     'airbnb/hooks',

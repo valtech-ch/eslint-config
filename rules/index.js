@@ -20,5 +20,8 @@ module.exports = {
     // https://www.npmjs.com/package/eslint-plugin-simple-import-sort
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+
+    // https://www.npmjs.com/package/eslint-plugin-unused-imports
+    'unused-imports/no-unused-imports': 'error',
   },
 }
