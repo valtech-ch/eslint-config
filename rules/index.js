@@ -16,6 +16,7 @@ module.exports = {
     // https://www.npmjs.com/package/eslint-plugin-import
     'import/extensions': ['error', 'never'],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/prefer-default-export': 'off',
 
     // https://www.npmjs.com/package/eslint-plugin-simple-import-sort
     'simple-import-sort/imports': 'error',
