@@ -1,7 +1,7 @@
 {
   "name": "@valtech-ch/eslint-config",
   "description": "ESLint configuration files containing rules using TypeScript",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "license": "MIT",
   "keywords": [
     "TypeScript",
