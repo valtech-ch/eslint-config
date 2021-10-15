@@ -1,6 +1,9 @@
 module.exports = {
   extends: ['./index.js'],
   rules: {
+    // https://www.npmjs.com/package/eslint-plugin-jest
+    'jest/expect-expect': 'off',
+
     // https://www.npmjs.com/package/eslint-plugin-react
     'react/jsx-filename-extension': ['error', { extensions: ['.ts', '.tsx'] }],
     'react/prop-types': 'off',
